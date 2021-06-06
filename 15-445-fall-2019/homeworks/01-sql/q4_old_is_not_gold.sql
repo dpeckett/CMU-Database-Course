@@ -1,0 +1,1 @@
+SELECT CAST(premiered/10 as TEXT) || '0s', COUNT() AS n FROM titles WHERE premiered IS NOT NULL GROUP BY premiered/10 ORDER BY n DESC;
